@@ -26,7 +26,7 @@ type sortTestSuite struct{}
 
 func (s *sortTestSuite) TestMergeSort(c *check.C) {
 	lens := []int{1, 3, 5, 7, 11, 13, 17, 19, 23, 29, 1024, 1 << 13, 1 << 17, 1 << 19, 1 << 20}
-
+	// lens := []int{13}
 	for i := range lens {
 		src := make([]int64, lens[i])
 		expect := make([]int64, lens[i])
